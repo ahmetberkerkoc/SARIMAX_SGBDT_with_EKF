@@ -1,4 +1,4 @@
-# SARIMAX_SGBDT_with_EKF
+# SX_sGBDT
 
 The class of SX_sGBDT is provided. 
 
