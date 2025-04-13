@@ -77,7 +77,7 @@ Open and run the following notebooks in order:
 
 ---
 
-## 📊 Inputs & Outputs
+## Inputs & Outputs
 
 ### Input:
 - Custom or provided time series dataset (must be time-indexed)
