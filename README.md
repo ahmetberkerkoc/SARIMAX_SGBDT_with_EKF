@@ -40,7 +40,7 @@ This framework supports a variety of models:
   - Transformer-based architectures
 
 - **Custom Model**
-  - `SX_sGBDT` – A specialized model developed for this project.
+  - `SX_sGBDT` – Our unified framework
 
 ---
 
