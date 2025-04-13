@@ -314,15 +314,5 @@ def EKF_SGBDT(y_obs, model):
     for t, y_t in enumerate(y_obs):
         print(f"Time {t+1}")
         ekf(model=model, y_t=y_t, x_t=X[t], t=t, dt=dt)
-    
-
-
-def delhi_climate():
-    df = pd.read_csv("DailyDelhiClimate.csv")
-    df = df.drop(["date"], axis=1)
-    X = df.iloc[:, 1:-1]
-    y = df.iloc[:, -1]
-    test_size = int(len(df) * 0.3)
-    return X, y, test_size
 
 
