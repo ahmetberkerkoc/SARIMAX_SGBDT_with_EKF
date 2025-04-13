@@ -1,6 +1,3 @@
-Sure! Here's the complete `README.md` content written fully in Markdown syntax, ready to be copy-pasted into your repository:
-
-```markdown
 # Time Series Forecasting with ML & DL Models
 
 This repository provides a modular framework for time series forecasting using machine learning (ML) and deep learning (DL) models. It includes custom models, multi-resolution feature extraction, and a full pipeline for model comparison and evaluation.
