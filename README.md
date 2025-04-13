@@ -7,7 +7,7 @@ This repository provides a modular framework for time series forecasting using m
 ## Repository Structure
 
 - `SX_sGBDT.py`  
-  Custom implementation of the **SX_sGBDT** model, optimized for time series forecasting.
+  Our unified framework implementation of the **SX_sGBDT** model, optimized for time series forecasting.
 
 - `feature_extractor.ipynb`  
   Jupyter notebook for extracting features from time series data at various temporal resolutions (e.g., hourly, daily).
