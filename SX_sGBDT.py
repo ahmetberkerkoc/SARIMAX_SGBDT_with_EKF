@@ -130,7 +130,7 @@ class SX_sGBDT:
         self.I = np.identity(state_dim, dtype=float)
         self.P_t = rng.normal(scale=UPD_NOISE_STD, size=(1, state_dim))
         self.Z_t_1 = np.identity(state_dim, dtype=float) / 10
-
+        self.Q_t = np.identity(1, 1)
         self._measurements = []
         self._errors = []
         self._predictions = []
@@ -298,7 +298,7 @@ def ekf(model, y_t, x_t, t, dt):
     print(f"Residual: {r_t} for observation {y_t}")
     r_t = np.array([[r_t]])
 
-    R_t = model.P_t @ Z_t @ model.P_t.T
+    R_t = model.P_t @ Z_t @ model.P_t.T + model.Q_t
     K_t = Z_t @ model.P_t.T @ np.linalg.inv(R_t)
 
     z_t = z_t + (K_t @ r_t).squeeze()
