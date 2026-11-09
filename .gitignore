@@ -1,0 +1,26 @@
+# uv / Python environments
+.venv/
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Generated experiment artifacts
+outputs/
+results/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+

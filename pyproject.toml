@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sx-sgbdt"
+version = "0.1.0"
+description = "Research implementation of causal online SARIMAX and soft gradient-boosted decision trees trained with an extended Kalman filter."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lightgbm>=4.5",
+    "matplotlib>=3.10.9",
+    "neuralforecast>=3.0,<4",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.7",
+    "statsmodels>=0.14",
+    "torch>=2.4",
+    "xgboost>=2.0",
+]
+
+[project.scripts]
+sx-sgbdt = "SX_sGBDT:main"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29",
+    "jupyter>=1.1",
+    "pytest>=8.0,<10",
+]
+
+[tool.setuptools]
+py-modules = ["SX_sGBDT"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["."]
+python_files = ["test_*.py"]
+
